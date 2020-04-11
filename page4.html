@@ -1,0 +1,42 @@
+<!-- SURPRISE! -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="page4.js"></script>
+        <title>Me: Surprise!</title>
+
+    </head>
+    <body class="body">
+        <h1 class="title">A Simple Title for a Simple Website!</h1>
+
+        <ul><!-- NAVIGATION BAR-->
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="page1.html">Cooking & Baking</a></li>
+            <li><a href="page2.html">Field Hockey</a></li>
+            <li><a href="page3.html">Quotes in Quarantine</a></li>
+            <li class="active"><a href="page4.html">Surprise!</a></li>
+        </ul>
+
+
+        <div style="width: 100%; text-align: center;">
+            <div>
+                <h1>LIKES: <span id="like_counter"class="badge badge-success">0</span></h1>
+            </div>
+            <img src="cat.jpg" alt="surprise!" class="cat">
+            <div>
+                <!-- LIKE BUTTON -->
+                <button type="button" class="btn btn-primary btn-lg" onclick="like(); return false;">LIKE</button>
+
+                <!-- DISLIKE BUTTON -->
+                <button type="button" class="btn btn-danger btn-lg" onclick="dislike(); return false;">DISLIKE</button>
+                <dialog id="warning">
+                    <strong>HAHAHAHAHA</strong>, didn't think I would actually let you dislike my cat!<br/><br/><br/>
+                </dialog>
+            </div>
+        </div>
+    </body>
+</html>
