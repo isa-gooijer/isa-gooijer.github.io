@@ -1,0 +1,35 @@
+<!-- QUOTES IN QUARANTINE -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="page3.js"></script>
+        <title>Me: Quotes</title>
+
+    </head>
+    <body style="text-align: center;">
+        <h1 class="title">A Simple Title for a Simple Website!</h1>
+
+        <ul><!-- NAVIGATION BAR-->
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="page1.html">Cooking & Baking</a></li>
+            <li><a href="page2.html">Field Hockey</a></li>
+            <li class="active"><a href="page3.html">Quotes in Quarantine</a></li>
+            <li><a href="page4.html">Surprise!</a></li>
+        </ul>
+
+        <h2>Type a quote you want to share, and submit the form!</h2>
+        <form onsubmit="quotes(); return false;">
+            <input type="text" id="quote">
+            <input type="submit">
+        </form>
+
+        <div id="QUO">
+
+        </div>
+
+    </body>
+</html>
