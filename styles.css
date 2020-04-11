@@ -1,0 +1,108 @@
+/* STANDARD STYLES; FOR EVERY PAGE THE SAME*/
+
+
+/*TITLE OF THE PAGE*/
+
+.title
+{
+    font-family: monaco;
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    background-color: #101010;
+    margin-bottom: 0px;
+}
+
+
+
+/*NAVIGATION BAR*/
+
+/* Style of the navigation bar, appears on every page; normally <ul> give bulletpoint list*/
+ul
+{
+    list-style-type: none; /*remove bullet points*/
+    margin: 0; /*remove margins from list*/
+    padding: 0; /*remove padding form list*/
+    overflow: hidden; /*"hide" remainder that is not filled up by items, give it same background etc.*/
+    background-color: #747474;
+    position: -webkit-sticky; /* works in Safari */
+    position: sticky; /* to make the navigtion bar stick to the top of the screen when you scroll down on the webpage*/
+    top: 0; /*stick to top of the page*/
+    width: 100%;
+}
+
+/*all items in list after each other, horizontal*/
+li
+{
+    float: left;
+}
+
+/* item in list with a link(<a>) (so <a> outside of a list is not effected)*/
+li a
+{
+    display: block; /* link is entire block now and not only the txt*/
+    color: white; /*txt color*/
+    text-align: center;/*txt alignment in block*/
+    padding: 14px 16px; /*size of blocks, top-bottom px left-right px */
+    text-decoration: none;
+    font-size: 2.7vw; /* font size of txt/links*/
+}
+
+/* if you hover over the link/block of a item in list*/
+li a:hover
+{
+    background-color: #4E4E4E;
+    text-decoration: none; /*remove the underlining and txt color etc*/
+    color: white; /*txt color*/
+}
+
+
+/* the webpage your on should have this classtype */
+.active
+{
+  background-color: #333;
+}
+
+
+
+/*PAGE 1: COOKING & BAKING */
+div > p
+{
+    font-size: 2.3vw;
+}
+
+.picture
+{
+    width:30%;
+    height:30%;
+}
+
+
+/*PAGE 2: FIELD HOCKEY*/
+.hockeylinks
+{
+    font-size: 5em;
+    text-decoration: none;
+}
+
+
+/*PAGE 3: QUOTES IN QUARANTINE*/
+#QUO
+{
+    font-family: "Brush Script MT", cursive;
+    font-size: 2.9em;
+}
+
+
+/*PAGE 4: SURPRISE!important*/
+.cat
+{
+  max-width: 50%;
+  height: 50;
+  margin-bottom: 10px;
+}
+
+#warning
+{
+    font-size: 3em;
+}
